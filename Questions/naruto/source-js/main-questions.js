@@ -140,7 +140,7 @@
                 winContainer.style.opacity = "1"
                 winContainer.style.transition = "all 2s"
             })
-        }else if(winCount == 20 && record == 2000 && livesCount == 3 ){
+        }else if(winCount == 1&& record == 100 && livesCount == 3 ){
             const finalRecord = document.querySelector('.finalRecord')
             const video = document.querySelector('.video')
             const alertRecordLast = document.querySelector('.alert-record-last')
@@ -148,8 +148,7 @@
             finalRecord.style.visibility = 'visible'
             finalRecord.style.opacity = '1'
             finalRecord.style.transition = '1s'
-            video.setAttribute('src', "./Questions/naruto/img/record.mp4")
-            video.setAttribute('autoplay', "")
+            video.setAttribute('src', "https://c.tenor.com/nEe0t726IZoAAAAd/naruto.gif")
             setTimeout(()=>{
                 alertRecordLast.style.visibility = 'visible'
                 alertRecordLast.style.opacity = '1'
@@ -158,7 +157,7 @@
                 scoreLastRecord.innerHTML += score
                 recordLastRecord.innerHTML += record
                 
-            }, 12000)
+            }, 3000)
         }
 
     }
