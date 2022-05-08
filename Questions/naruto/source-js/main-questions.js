@@ -140,7 +140,7 @@
                 winContainer.style.opacity = "1"
                 winContainer.style.transition = "all 2s"
             })
-        }else if(winCount == 1&& record == 100 && livesCount == 3 ){
+        }else if(winCount == 20 && record == 2000 && livesCount == 3 ){
             const finalRecord = document.querySelector('.finalRecord')
             const video = document.querySelector('.video')
             const alertRecordLast = document.querySelector('.alert-record-last')
