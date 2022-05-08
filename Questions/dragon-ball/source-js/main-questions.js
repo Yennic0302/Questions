@@ -149,11 +149,7 @@
             finalRecord.style.visibility = 'visible'
             finalRecord.style.opacity = '1'
             finalRecord.style.transition = '1s'
-            video.setAttribute('src', "./Questions/dragon-ball/img/record.mp4")
-            video.setAttribute('autoplay', "")
-            video.setAttribute('type', "video/mp4")
-            video.setAttribute("loop",'')
-            video.setAttribute("muted",'')
+            video.setAttribute('src', "https://i.pinimg.com/originals/ec/f6/84/ecf6841c2610803559c41ba7c190db05.gif")
             setTimeout(()=>{
                 alertRecordLast.style.visibility = 'visible'
                 alertRecordLast.style.opacity = '1'
@@ -162,7 +158,7 @@
                 scoreLastRecord.innerHTML += score
                 recordLastRecord.innerHTML += record
                 
-            }, 5000)
+            }, 1000)
         }
 
     }
