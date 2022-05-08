@@ -215,7 +215,7 @@
 
 .enter-one-piece{
     position: absolute;
-    background: url(/resorce/img/one-piece-card.jpg) no-repeat center center/cover;
+    background: url(./resorce/img/one-piece-card.jpg) no-repeat center center/cover;
     width: 100%;
     height: 100%;
     transition: .3s;
@@ -235,7 +235,7 @@
 
 .enter-naruto{
     position: absolute;
-    background: url(/resorce/img/naruto-card.jpg) no-repeat center center/cover;
+    background: url(./resorce/img/naruto-card.jpg) no-repeat center center/cover;
     width: 100%;
     height: 100%;
     transition: .3s;
@@ -255,7 +255,7 @@
 
 .enter-dragon-ball{
     position: absolute;
-    background: url(/resorce/img/dragon-ball-card.jpg) no-repeat center center/cover;
+    background: url(./resorce/img/dragon-ball-card.jpg) no-repeat center center/cover;
     width: 100%;
     height: 100%;
     transition: .3s;
