@@ -149,7 +149,7 @@
             finalRecord.style.visibility = 'visible'
             finalRecord.style.opacity = '1'
             finalRecord.style.transition = '1s'
-            video.setAttribute('src', "/Questions/dragon-ball/img/record.mp4")
+            video.setAttribute('src', "./Questions/dragon-ball/img/record.mp4")
             video.setAttribute('autoplay', "")
             setTimeout(()=>{
                 alertRecordLast.style.visibility = 'visible'
