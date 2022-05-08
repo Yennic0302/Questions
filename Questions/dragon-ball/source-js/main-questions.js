@@ -151,6 +151,9 @@
             finalRecord.style.transition = '1s'
             video.setAttribute('src', "./Questions/dragon-ball/img/record.mp4")
             video.setAttribute('autoplay', "")
+            video.setAttribute('type', "video/mp4")
+            video.setAttribute("loop",'')
+            video.setAttribute("muted",'')
             setTimeout(()=>{
                 alertRecordLast.style.visibility = 'visible'
                 alertRecordLast.style.opacity = '1'
