@@ -159,8 +159,7 @@
             finalRecord.style.visibility = 'visible'
             finalRecord.style.opacity = '1'
             finalRecord.style.transition = '1s'
-            video.setAttribute('src', "./Questions/one-piece/img/record.mp4")
-            video.setAttribute('autoplay', "")
+            video.setAttribute('src', "https://i.pinimg.com/originals/50/c5/f1/50c5f1847013012ee0f25f67fdddb8d9.gif")
             setTimeout(()=>{
                 alertRecordLast.style.visibility = 'visible'
                 alertRecordLast.style.opacity = '1'
@@ -169,7 +168,7 @@
                 scoreLastRecord.innerHTML += score
                 recordLastRecord.innerHTML += record
                 
-            }, 11000)
+            }, 3000)
         }
 
     }
