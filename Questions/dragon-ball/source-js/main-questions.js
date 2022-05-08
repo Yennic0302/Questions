@@ -16,8 +16,9 @@
     const recordLastWin = document.querySelector('.last-record-win')
     const scoreLastLouse = document.querySelector('.last-score-louse')
     const recordLastLouse = document.querySelector('.last-record-louse')
-    const scoreLastRecord= document.querySelector('.last-score-record')
-    const recordLastRecord = document.querySelector('.last-record-record')
+    const scoreLastRecord= document.querySelector('.last-score-win')
+    const recordLastRecord = document.querySelector('.last-record-win')
+
 
 
     let id = 0 
@@ -30,10 +31,12 @@
         opc3 = questionsAnime[id].opc3
         opc4 = questionsAnime[id].opc4
         backg = questionsAnime[id].backg  
+        console.log(backg)
         return pregunta,opc1,opc2,opc3,opc4,backg
         
     }
     asignarValores()
+    console.log(backg)
     
     const btn1 = document.createElement("button")
     btn1.classList.add("btn")
@@ -118,17 +121,22 @@
 
     const recordBackground =()=>{
         if(record == 500){
-            mainContainer.style.background = " url('https://r4.wallpaperflare.com/wallpaper/458/456/961/movie-dragon-ball-super-broly-gogeta-dragon-ball-hd-wallpaper-2bd5be2fd50afe46e3d22d0c28d969e1.jpg') no-repeat center center/cover "
+            mainContainer.style.background = " url('https://wallpaper.dog/large/17169612.png') no-repeat center center/cover "
             mainContainer.style.transition = "all 3s"
         }else if(record == 1000){
-            mainContainer.style.background = " url('https://r4.wallpaperflare.com/wallpaper/514/74/570/dragon-ball-dragon-ball-z-gohan-dragon-ball-super-saiyan-2-hd-wallpaper-47a98b5f32e7450209244c8204868c9d.jpg') no-repeat center center/cover "
+            mainContainer.style.background = " url('https://images3.alphacoders.com/905/thumb-1920-905276.jpg') no-repeat center center/cover "
             mainContainer.style.transition = "all 3s"
         }else if(record == 1500){
-            mainContainer.style.background = " url('https://r4.wallpaperflare.com/wallpaper/410/227/670/dragon-ball-super-son-goku-ultra-instinct-goku-kamehameha-wallpaper-e90058bd51daaddb8667c8fff0f1768d.jpg') no-repeat center center/cover "
+            mainContainer.style.background = " url(https://images6.alphacoders.com/598/thumb-1920-598850.jpg) no-repeat center center/cover "
             mainContainer.style.transition = "all 3s"
         }
     }
 
+    const gameOver = ()=>{
+        if(livesCount == 0){
+            console.log('perdiste')
+        }
+    }
 
 
     let winCount = 0
@@ -139,9 +147,11 @@
             winContainer.style.visibility = "visible"
             setTimeout(()=>{
                 winContainer.style.opacity = "1"
-                winContainer.style.transition = "all 2s"
-            })
-        }else if(winCount == 20 && record == 2000 && livesCount == 3 ){
+                winContainer.style.transition = "all 1s"
+
+            },500)
+
+        }else if(winCount == 20 && record == 2000 && livesCount==3){
             const finalRecord = document.querySelector('.finalRecord')
             const video = document.querySelector('.video')
             const alertRecordLast = document.querySelector('.alert-record-last')
@@ -149,7 +159,7 @@
             finalRecord.style.visibility = 'visible'
             finalRecord.style.opacity = '1'
             finalRecord.style.transition = '1s'
-            video.setAttribute('src', "./Questions/dragon-ball/img/record.mp4")
+            video.setAttribute('src', "./Questions/one-piece/img/record.mp4")
             video.setAttribute('autoplay', "")
             setTimeout(()=>{
                 alertRecordLast.style.visibility = 'visible'
@@ -159,7 +169,7 @@
                 scoreLastRecord.innerHTML += score
                 recordLastRecord.innerHTML += record
                 
-            }, 5000)
+            }, 11000)
         }
 
     }
@@ -170,6 +180,7 @@
         newScore()
         newRecord()
         asignarValores()
+        gameOver()
         recordBackground()
 
         btn1.classList.add("btn1")
@@ -187,6 +198,7 @@
         livesCount = liveLouse
         score = 0
         contScore.innerHTML = score
+        gameOver()
         lives()
         asignarValores()
         setTimeout(()=>{
@@ -205,6 +217,7 @@
         livesCount = liveLouse
         score = 0
         contScore.innerHTML = score
+        gameOver()
         lives()
         asignarValores()
         setTimeout(()=>{ 
@@ -222,6 +235,7 @@
         livesCount = liveLouse
         score = 0
         contScore.innerHTML = score
+        gameOver()
         lives()
         asignarValores()
         setTimeout(()=>{
