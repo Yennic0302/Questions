@@ -1,0 +1,261 @@
+
+.alertWin-container{
+    visibility: hidden;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #1119;
+    z-index: 150;
+    opacity: .1;
+
+}
+
+.alertWin{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 50%;
+    height: 80%;
+    background-color: #222;
+    z-index: 250;
+    text-align: center;
+    color: #fff;
+
+}
+
+.title-Container-win{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 130px;
+    margin: 10px;
+}
+
+.title-Container-win h1{
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    font-size: 70px;
+    color: #00ff80;
+    
+}
+
+
+
+
+.title-win-pirate{
+    font-size: 40px;
+} 
+
+.btn__container-win{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-win{
+    box-sizing: content-box;
+    background-color: #00ff80;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 70px;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    color: #111;
+    border-radius: 5px;
+}
+
+.btn-win:hover{
+    cursor: pointer;
+    background-color: #00c040;
+    color: #fff;
+    box-shadow: 0px 0px 0px 1   0px #333;
+}
+
+
+.alertLouse-Container{
+    visibility: hidden;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #1119;
+    z-index: 150;
+    opacity: .1;
+
+}
+
+.alertLouse{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 50%;
+    height: 80%;
+    background-color: #222;
+    z-index: 250;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+
+.title-Container-louse{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 130px;
+    margin: 10px;
+}
+
+.title-Container-louse h1{
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    font-size: 120px;
+    color: #f42;
+    
+}
+
+
+
+
+.title-louse-pirate{
+    font-size: 40px;
+} 
+
+
+.btn__container-louse{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-louse{
+    box-sizing: content-box;
+    background-color: #e42;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 70px;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn-louse:hover{
+    cursor: pointer;
+    background-color: #f11;
+    color: #111;
+    box-shadow: 0px 0px 0px 1   0px #333;
+}
+
+.finalRecord{
+    visibility: hidden;
+    position: absolute;
+    background-color: #111;
+    height: 100vh;
+    width: 100%;
+    z-index: 800;
+    opacity: .1;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.alert-record-last{
+    visibility: hidden;
+    position: absolute;
+    background: #333;
+    opacity: .1;
+    width: 100%;
+    height: 100vh;
+}
+.alertWinRecord{
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 50%;
+    height: 80%;
+    background: linear-gradient( to right, #1118, #1116, #1112);
+    z-index: 2000;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+
+.title-Container-record{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 130px;
+    margin: 10px;
+}
+
+.title-Container-record h1{
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    font-size: 70px;
+    color: #e42;
+    
+}
+
+
+
+.title-win-pirate-record{
+    font-size: 40px;
+} 
+
+.btn__container-win-record{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-win-record{
+    box-sizing: content-box;
+    background-color: #f42;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 70px;
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    color: #333;
+    border-radius: 5px;
+}
+
+.btn-win-record:hover{
+    cursor: pointer;
+    background-color: #f12;
+    color: #fff;
+    box-shadow: 0px 0px 0px 1   0px #333;
+}

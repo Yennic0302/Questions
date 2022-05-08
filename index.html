@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Anime</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-response.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <nav class="nav__container">
+        <h1 class="title-nav">QuizAnime</h1>
+    </nav>
+
+    <section class="presentacion__container">
+        <div class="container__title-presentacion">
+            <h1 class="title-presentacion">Quiz Anime</h1>
+            <h2 class="title-descripcion"> Supera el Reto</h2>
+        </div>
+        <div class="btn-retos-container">
+            <a href="#categorias__container"><button class="btn-retos"> Retos </button></a>
+        </div>
+        <video  class="video-presentacion" src="./resorce/video/background-anime-quiz.mp4" type="video/mp4" muted autoplay loop >
+        
+        </video>
+
+    </section>
+
+    <section class="descripcion__container" >
+        <div class="descripcion-items">
+            <div class="descripcion-text">
+                <h1 class="descripcion__title"> Que es <b>Quiz Anime</b>?</h1>
+                <p>  Quiz Anime, pone a prueba tus conocimientos de tu anime favorito
+                    y te coloca un reto como fan de dicho anime, mediante una serie de preguntas
+                    con varias opciones para dar tu respuesta, tendras que acertar cada una para llegar al puntaje mas alto y ser un verdadero fan.
+                </p>
+            </div>
+            <div class="descripcion-img-container">
+                <div id="slaider-img">
+                    <div class="descripcion-img img1">
+                        <img src="./resorce/img/asta-index.jpg" alt="">
+                    </div>
+                    <div class="descripcion-img img2">
+                        <img src="./resorce/img/todoroki-card.jpg" alt="">
+                    </div>
+                    <div class="descripcion-img img3">
+                        <img src="./resorce/img/tomioka-index.jpg" alt="">
+                    </div>
+                    <div class="descripcion-img img3">
+                        <img src="./resorce/img/obito-card.jpg" alt="">
+                    </div>
+                    <div class="descripcion-img img3">
+                        <img src="./resorce/img/luffy-card.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="categorias__container" id="categorias__container">
+        <h1 class="title-categorias">Selecciona tu reto</h1>
+        <div class="categorias__div-grid">
+            <div class="grid-card categoria-one-piece">
+                <div class="enter-one-piece">
+                    <div class="descripcion-card">
+                        <h1>Quiz One Piece</h1>
+                        <div class="button-container">
+                            <a href="./Questions/one-piece/portada.html"><button class="btn">Entrar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-card categoria-naruto">
+                <div class="enter-naruto">
+                    <div class="descripcion-card">
+                        <h1>Quiz Naruto</h1>
+                        <div class="button-container">
+                            <a href="./Questions/naruto/portada.html"><button class="btn">Entrar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-card categoria-dragon-ball">
+                <div class="enter-dragon-ball">
+                    <div class="descripcion-card">
+                        <h1>Quiz Dragon Ball</h1>
+                        <div class="button-container">
+                            <a href="/Questions/dragon-ball/portada.html"><button class="btn">Entrar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-container">
+        <h3 class="footer-autor">©Yennic 2022 </h3>
+    </footer>
+
+<script src="./main.js"></script>
+</body>
+</html>

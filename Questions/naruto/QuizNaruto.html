@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Naruto</title>
+    <link rel="stylesheet" href="./static/style-questions.css">
+    <link rel="stylesheet" href="./static/alert-game.css">
+    <link rel="stylesheet" href="./static/style-questions-response.css">
+    <link rel="stylesheet" href="./static/alert-game-response.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="finalRecord">
+        <div class="alertWinRecord" >
+            <div class="title-Container-record">
+                <h1 class="border-win-record">Puntaje Perfecto</h1>
+                <h1 class="wave-win-record">Puntaje Perfecto</h1>
+            </div>
+            <h2 class="title-win-pirate-record">Felicidades pasaste el reto como un verdadero Shinobi</h2>  
+                <div class="scoreFinal">
+                    <h1 class="last-score-record">Score final:</h1>
+                    <h1 class="last-record-record">Record:</h1>
+                </div>
+            <div class="btn__container-win-record">
+            <a href="./QuizNaruto.html"><button class="btn-win-record reset">Jugar de nuevo</button></a>
+            <a href="/index.html"><button class="btn-win-record home"> Inicio</button></a>
+            </div>
+        </div>
+        <video class="video">   </video>
+
+    </div>
+    <div class="alert-record-last"></div>
+
+    <div class="alertWin-container">
+        <div class="alertWin" >
+            <div class="title-Container-win">
+                <h1 class="border-win">Felicidades ganaste</h1>
+                <h1 class="wave-win">Felicidades ganaste</h1>
+            </div>
+            <h2 class="title-win-pirate">Eres un verdadero Pirata</h2>  
+                <div class="scoreFinal">
+                    <h1 class="last-score-win">Score final:</h1>
+                    <h1 class="last-record-win">Record:</h1>
+                </div>
+            <div class="btn__container-win">
+            <a href="./QuizNaruto.html"><button class="btn-win reset">Jugar de nuevo</button></a>
+            <a href="/index.html"><button class="btn-win home"> Inicio</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="alertLouse-Container">
+        <div class="alertLouse">
+                <div class="title-Container-louse">
+                    <h1 class="border-louse">Derrota</h1>
+                    <h1 class="wave-louse">Derrota</h1>
+                </div>
+                <h2 class="title-louse-pirate">Suerte la proxima</h2>  
+                <div class="scoreFinal">
+                    <h1 class="last-score-louse">Score final:</h1>
+                    <h1 class="last-record-louse">Record:</h1>
+                </div>
+                <div class="btn__container-louse">
+                    <a href="./QuizNaruto.html"><button class="btn-louse reset">Jugar de nuevo</button></a> 
+                    <a href="/index.html"> <button class="btn-louse home"> Inicio</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<section class="main-container">
+
+    <nav class="questions-nav">
+        <div class="logo"> <img src="./img/naruto.png" alt=""></div>
+        <div class="container-lives">
+            <div id="live1" class="live"><span class="material-symbols-outlined heart_broken1">favorite</span></div>
+            <div id="live2" class="live"><span class="material-symbols-outlined heart_broken2">favorite</span></div>
+            <div id="live3" class="live"><span class="material-symbols-outlined heart_broken3">favorite</span></div>
+        </div>
+        <div class="points-container">
+            <div class="cont-score points">
+                <div class=" title-score"><h1 class="size" >Score:</h1></div>
+                <p class="size score">000</p>
+            </div>
+            <div class="cont-record points">
+                <h1 class="size">Record:</h1>
+                <p class="size record">000</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="background-shadow"></div>
+    
+    
+    <section class="cuestions-container">
+
+        <div class="question">
+            <p class="p-question"></p>
+        </div>
+        <div class="btn-container"></div>
+    </section>
+</section>
+
+<script type="module" src="./source-js/main-questions.js"></script>
+</body>
+</html>

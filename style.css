@@ -1,0 +1,342 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    scroll-behavior: smooth;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.nav__container{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    height: 50px;
+    z-index: 1000;
+}
+
+.title-nav{
+    margin: 12px 60px;
+    letter-spacing: 3px;
+
+}
+
+.presentacion__container{
+    height: 90vh;
+    width: 100%;
+    box-shadow: 5px 5px 50px #222;
+}
+
+.video-presentacion{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container__title-presentacion{
+    position: absolute;
+    background: linear-gradient(to right, #3333, #3333, #3331),     
+                linear-gradient(to top, #3333, #3333, #3331),
+                linear-gradient(to left, #333, #3335, #3331);
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    z-index: 800;
+    box-shadow: 5px 5px 50px #222;
+}
+
+.title-presentacion{
+
+    color: #fff;
+    font-size: 90px;
+    text-shadow: -2px -2px 20px #111;
+    letter-spacing: 15px;
+
+}
+.title-descripcion{
+    text-shadow: 2px 2px 20px #111;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 15px;
+}
+
+.btn-retos-container{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 100px;
+    z-index: 900;
+}
+
+.btn-retos{
+    padding: 15px 40px;
+    background-color: #48e;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+.btn-retos:hover{
+    background-color: #fff;
+    color:#111;
+}
+
+.btn-retos:active{
+    background-color: #aaa;
+}
+
+
+.descripcion__container{
+    width: 100%;
+    height: 70vh;
+    background-color: #fff;
+    display: flex;
+
+    align-items: center ;
+    padding-top: 100px;
+}
+.descripcion-items{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.descripcion__title b{
+    font-size: 1.1em;
+    color: #48e;
+}
+
+
+.descripcion__title{
+    padding: 30px;
+    padding-bottom: 20px;
+    font-size: 2.2em;
+    letter-spacing: 3px;
+}
+
+
+
+.descripcion-text{
+    box-sizing: content-box;
+    height: 70%;
+    min-width: 250px;
+    max-width: 100%;
+    margin: 30px;
+    flex: 1;
+    box-shadow: 2px 2px 10px #333;
+}
+.descripcion-text p{
+    padding: 30px;
+    padding-top: 20px;
+    font-size: 1.3em;
+}
+
+.descripcion-img-container{
+    width: 250px;
+    height: 90%;
+    margin: 0px 40px;
+    background-color: #333;
+    overflow: hidden;
+    box-shadow: 2px 2px 15px #222;
+}
+
+#slaider-img{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.descripcion-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+.descripcion-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+.title-categorias{
+    color: #111;
+    font-size: 2.5em;
+    padding: 20px;
+}
+
+
+.categorias__container{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.categorias__div-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px,1fr));
+    grid-auto-rows: 400px;
+    margin: 20px 0px;
+    padding: 30px;
+    min-width: 70vw;
+    height: 100%;
+    background-color: #fff;
+    gap: 30px;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.grid-card{
+    position: relative;
+    min-width: 250px;
+    height: 100%;
+
+}
+
+
+.enter-one-piece{
+    position: absolute;
+    background: url(/resorce/img/one-piece-card.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    box-shadow: 2px 2px 15px #222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.enter-one-piece:hover{
+    margin-left: -10px;
+    margin-top: -10px;
+    width: 110%;
+    height: 110%;
+}
+
+
+
+.enter-naruto{
+    position: absolute;
+    background: url(/resorce/img/naruto-card.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    box-shadow: 2px 2px 15px #222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.enter-naruto:hover{
+    margin-left: -10px;
+    margin-top: -10px;
+    width: 110%;
+    height: 110%;
+}
+
+
+
+.enter-dragon-ball{
+    position: absolute;
+    background: url(/resorce/img/dragon-ball-card.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    box-shadow: 2px 2px 15px #222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.enter-dragon-ball:hover{
+    margin-left: -10px;
+    margin-top: -10px;
+    width: 110%;
+    height: 110%;
+}
+
+.descripcion-card{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #3335, transparent);
+    color: #fff;
+    transform: translateY(70px);
+    opacity: 0;
+    transition: 1s;
+    border-radius: 10px;
+    justify-content: flex-end;
+}
+.descripcion-card h1{
+    padding: 25px 10px;
+    font-size: 2em;
+}
+
+.descripcion-card p{
+    padding: 15px;
+}
+
+.descripcion-card:hover{
+    opacity: 1;
+    background-color: #3335;
+    transform: translateY(0px);
+}
+
+.button-container{
+    width: 100%;
+    text-align: center;
+}
+
+
+.btn{
+    padding: 10px 20px;
+    background-color: #48e;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color:#111;
+}
+
+.btn:active{
+    background-color: #aaa;
+}
+.footer-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
